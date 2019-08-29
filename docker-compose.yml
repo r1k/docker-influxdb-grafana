@@ -9,7 +9,7 @@ services:
         networks:
             - monitoring
         volumes:
-            - grafana-volume:/var/lib/docker/volumes/grafana
+            - grafana-volume:/var/lib/grafana
     
     influxdb:
         image: influxdb:latest
@@ -27,7 +27,7 @@ services:
         networks:
             - monitoring
         volumes:
-            - influxdb-volume:/var/lib/docker/volumes/influxdb
+            - influxdb-volume:/var/lib/influxdb
     
 networks:
     monitoring:
